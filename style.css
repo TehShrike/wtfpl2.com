@@ -1,0 +1,30 @@
+body {
+	background: #F0F0F0;
+}
+
+div#box {
+	margin-left: auto;
+	margin-right: auto;
+	width: 35em;
+	padding: 1em;
+	background: white;
+}
+
+.rounded-corners {
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+}
+
+div#footer {
+	float: right;
+	padding-right: 1em;
+}
+
+img#github {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+}
