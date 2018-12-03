@@ -2,7 +2,8 @@ body {
 	background: #F0F0F0;
 }
 
-div#box {
+#box {
+	margin-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
 	width: 35em;
@@ -11,20 +12,33 @@ div#box {
 }
 
 .rounded-corners {
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-khtml-border-radius: 20px;
 	border-radius: 20px;
 }
 
-div#footer {
+#footer {
 	float: right;
 	padding-right: 1em;
 }
 
-img#github {
-	position: absolute;
-	top: 0;
-	right: 0;
-	border: 0;
+
+
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 45px; /* must be same height as the footer */
+}
+
+#footer {
+	position: relative;
+	margin-top: -45px; /* negative value of footer height */
+	height: 45px;
+	clear: both;
 }
