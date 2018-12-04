@@ -1,9 +1,5 @@
-body {
-	background: #F0F0F0;
-}
-
 #box {
-	margin-top: 1em;
+	margin-top: 32px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 35em;
@@ -12,33 +8,33 @@ body {
 }
 
 .rounded-corners {
-	border-radius: 20px;
-}
-
-#footer {
-	float: right;
-	padding-right: 1em;
+	border-radius: 16px;
 }
 
 
 
-
-html, body {
+html {
 	height: 100%;
 }
-
-#wrap {
-	min-height: 100%;
+html, body {
+	padding: 0;
+	margin: 0;
+}
+body {
+	min-height: 100vh;
+	background: #F0F0F0;
+	display: flex;
+	flex-direction: column;
 }
 
-#main {
-	overflow: auto;
-	padding-bottom: 45px; /* must be same height as the footer */
+#content {
+	flex: 1 0 auto;
 }
+
 
 #footer {
-	position: relative;
-	margin-top: -45px; /* negative value of footer height */
-	height: 45px;
-	clear: both;
+	flex-shrink: 0;
+	padding: 16px;
+	padding-right: 32px;
+	text-align: right;
 }
